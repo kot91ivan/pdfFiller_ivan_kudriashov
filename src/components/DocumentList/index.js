@@ -3,7 +3,7 @@ import DocumentListItem from "./DocumentListItem"
 
 const DocumentList = ({ list }) => {
   return (
-    <div className={s.document_list}>
+    <div className={s.document_list} aria-label="List of documents">
       {list &&
         list.map((item, index) => {
           const isLastItem = index === list.length - 1
