@@ -14,7 +14,7 @@
     margin-right: auto;
     overflow: hidden;
 
-    &_icon {
+    &__icon {
       width: 34px;
       height: 46px;
 
@@ -28,29 +28,27 @@
       margin-left: 13px;
       line-height: 20px;
       overflow: hidden;
+    }
 
-      &_name {
-        color: #414141;
-        font-size: 14px;
-        font-weight: 700;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        width: 100%;
-        max-width: 395px;
-      }
+    &__name {
+      color: #414141;
+      font-size: 14px;
+      font-weight: 700;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+      max-width: 395px;
+    }
 
-      &_date {
-        color: #6b6b6b;
-        font-size: 12px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
+    &__date {
+      color: #6b6b6b;
+      font-size: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
-
-
 
   &__is_last {
     border: 1px solid #d4d4d4;

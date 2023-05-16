@@ -15,6 +15,7 @@ const DocumentListItem = ({ name, date, isLast }) => {
         [s.document_list__item__is_last]: isLast,
         [s.document_list__item__is_mobile]: isMobile
       })}
+      aria-label={`Document item with name ${name}`}
     >
       <div className={s.document_list__item__data}>
         <div className={s.document_list__item__data_icon}>
@@ -23,13 +24,13 @@ const DocumentListItem = ({ name, date, isLast }) => {
 
         <div className={s.document_list__item__data__info}>
           <div
-            className={s.document_list__item__data__info_name}
+            className={s.document_list__item__data__name}
             aria-label={`Name document ${name}`}
           >
             {name ?? "Name Document"}
           </div>
           <div
-            className={s.document_list__item__data__info_date}
+            className={s.document_list__item__data__date}
             aria-label={`Date document ${date}`}
           >
             {date ? `Last Edited: ${date}` : "Date Document"}
@@ -41,7 +42,7 @@ const DocumentListItem = ({ name, date, isLast }) => {
         isPrimary
         isWide={isMobile}
         isMobile={isMobile}
-        label={`View document ${name}`}
+        label={`View document by name ${name}`}
       >
         View document
       </Button>
