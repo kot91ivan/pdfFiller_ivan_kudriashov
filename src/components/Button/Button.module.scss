@@ -10,6 +10,7 @@
   max-width: 120px;
   width: 100%;
   cursor: pointer;
+  flex-shrink: 0;
 
   &:hover {
     background: #F5F5F5;
@@ -36,5 +37,13 @@
     &:hover {
       background: #FFA42E;
     }
+  }
+
+  &.is_mobile:hover {
+    background: linear-gradient(180deg, #FFAE45 0%, #E88300 100%);
+  }
+
+  &.is_wide {
+    max-width: 100%;
   }
 }
