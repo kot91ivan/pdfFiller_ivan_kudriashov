@@ -1,0 +1,13 @@
+.document_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 616px;
+
+  &__empty_list {
+    font-size: 18px;
+    color: #414141;
+  }
+}
