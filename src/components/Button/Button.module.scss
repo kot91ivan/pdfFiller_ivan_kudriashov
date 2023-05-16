@@ -1,0 +1,40 @@
+.button {
+  background-color: #fff;
+  background: linear-gradient(180deg, #F5F5F5 0%, #E9E9E9 100%);
+  border: 1px solid #bfbfbf;
+  border-radius: 4px;
+  color: #414141;
+  font-weight: 700;
+  font-size: 12px;
+  height: 32px;
+  max-width: 120px;
+  width: 100%;
+  cursor: pointer;
+
+  &:hover {
+    background: #F5F5F5;
+  }
+
+  &:active {
+    background: linear-gradient(180deg, #E9E9E9 0%, #F5F5F5 100%);
+  }
+
+  &:focus {
+    background: linear-gradient(180deg, #F5F5F5 0%, #E9E9E9 100%);
+    box-shadow: 0px 0px 4px #BFBFBF;
+  }
+
+  &:disabled {
+    background: #F9F9F9;
+  }
+
+  &.primary {
+    color: #fff;
+    border-color: #E88300;
+    background: linear-gradient(180deg, #FFAE45 0%, #E88300 100%);
+
+    &:hover {
+      background: #FFA42E;
+    }
+  }
+}
